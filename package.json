@@ -8,10 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "sass": "^1.56.2",
     "vite": "^4.0.0"
   }
 }
