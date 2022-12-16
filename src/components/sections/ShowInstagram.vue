@@ -10,8 +10,11 @@
 
 <script>
 // vanilla js - temporary solution
+
+import { key } from "../ui/key.js";
+const token = key;
 fetch(
-  "https://graph.instagram.com/me/media?fields=media_url&access_token=IGQVJXYXpuOE9xVWtRRGJQUnFILU9TeWE2VWNXcnJERUlLZAHhDWmFXbXRRZA1lpb3N4WkxIYWVpd1RGVl94d2NyX21vd0I4cmN4WXBuRjc2aXE5c2VtbjRqRERNYkVqMHdHeEVCU2oxVTNZAaTU5N2l5aQZDZD"
+  `https://graph.instagram.com/me/media?fields=media_url&access_token=${token}`
 )
   .then((res) => res.json())
   .then((res) => {
@@ -46,9 +49,9 @@ section {
   padding: 6rem 3rem;
 }
 
-h2{
+h2 {
   text-align: center;
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 ul {
@@ -67,7 +70,7 @@ li {
   height: auto;
 }
 
-.icon{
+.icon {
   text-align: center;
 }
 </style>

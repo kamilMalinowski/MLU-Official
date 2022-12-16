@@ -13,7 +13,7 @@ div{
 }
 
 .header-logo {
-  max-width: 20rem;
+  max-width: 3rem;
   grid-column: 1/2;
   grid-row: 1/2;
   @media screen and (min-width: 768px) {
@@ -23,7 +23,7 @@ div{
 }
 
 .order-now-logo{
-  max-width: 70rem;
+  max-width: 20rem;
 }
 
 .show-youtube-logo{
@@ -31,6 +31,6 @@ div{
 }
 
 .footer-logo{
-  max-width: 35rem;
+  max-width: 15rem;
 }
 </style>

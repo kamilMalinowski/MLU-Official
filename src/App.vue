@@ -5,6 +5,8 @@
 </template>
 
 <script>
+
+
 import TheHeader from "./components/layout/TheHeader.vue";
 import TheSections from "./components/layout/TheSections.vue";
 import TheFooter from "./components/layout/TheFooter.vue";
@@ -23,13 +25,15 @@ export default {
 :root {
   --c-light: #fff2fe;
   --c-dark: #1a1a1a;
-  --c-primary: #57036b;
-  --c-secondary: #11f7a2;
+  // --c-primary: #57036b;
+  // --c-secondary: #11f7a2;
+  --c-primary: #1d0c32;
+  --c-secondary: #c960e1;
 
   --transition: all 0.4s;
 
   --shadow: 0 0.5rem 3rem rgba(255, 255, 255, 0.3);
-  --shadow-hover: 0 0.5rem 3rem rgba(17, 247, 163, 0.3);
+  --shadow-hover: 0 0.5rem 3rem rgba(239, 17, 247, 0.3);
 }
 
 html {

@@ -17,9 +17,9 @@
 <style lang="scss" scoped>
 footer {
   background-image: linear-gradient(
-      180deg,
-      rgba(26, 26, 26, 0.7),
-      rgba(26, 26, 26, 0.9)
+      45deg,
+      rgba(177, 84, 198, 0.4),
+      rgb(29, 12, 50)
     ),
     url("./footer-bg.jpg");
   background-size: cover;

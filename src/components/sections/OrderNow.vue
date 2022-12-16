@@ -14,9 +14,9 @@
 section {
   padding: 3rem;
   background-image: linear-gradient(
-      180deg,
-      rgba(26, 26, 26, 0.4),
-      rgba(26, 26, 26, 0.6)
+      45deg,
+      rgba(177, 84, 198, 0.4),
+      rgb(29, 12, 50)
     ),
     url("./order-now-bg.jpg");
   background-size: cover;

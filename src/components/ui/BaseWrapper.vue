@@ -23,7 +23,7 @@ div {
 }
 
 .order-now-wrapper {
-  height: 100%;
+  min-height: 100vh;
   display: grid;
   place-content: center;
   grid-gap: 3rem;
