@@ -16,7 +16,9 @@ div{
   max-width: 3rem;
   grid-column: 1/2;
   grid-row: 1/2;
+  margin: 0 auto 0 0;
   @media screen and (min-width: 768px) {
+    margin: 0 auto;
     grid-column: 2/3;
     grid-row: 1/2;
   }

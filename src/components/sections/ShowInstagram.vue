@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="icon">
-      <v-icon name="bi-instagram" scale="2.8" />
+      <v-icon name="bi-instagram" scale="2.6" />
     </div>
-    <h2>Instagram Gallery</h2>
+    <h2>INSTAGRAM GALLERY</h2>
     <ul class="ul"></ul>
   </section>
 </template>
@@ -26,9 +26,9 @@ fetch(
       if (String(img.media_url).slice(0, 13) === "https://video") {
       } else {
         const html = `
-          <li style="overflow: hidden; border-radius: 4px;">
+          <li style="overflow: hidden; border-radius: var(--round);">
             <img
-              style="width: 100%; height: 100%; object-fit: cover;"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1/1;"
               class="img"
               src="${media_url}"
               alt="instagram-img">
@@ -45,29 +45,16 @@ fetch(
 </script>
 
 <style lang="scss" scoped>
-section {
-  padding: 6rem 3rem;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 6rem;
-}
-
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
+  margin-top: 6rem;
 }
 
 li {
   display: flex;
   width: 100%;
-}
-
-.img {
-  width: 100%;
-  height: auto;
 }
 
 .icon {

@@ -2,7 +2,8 @@
   <main>
     <order-now></order-now>
     <single-release></single-release>
-    <show-youtube></show-youtube>
+    <tour-dates></tour-dates>
+    <my-picture></my-picture>
     <show-instagram></show-instagram>
   </main>
 </template>
@@ -10,21 +11,18 @@
 <script>
 import OrderNow from "../sections/OrderNow.vue";
 import singleRelease from "../sections/SingleRelease.vue";
-import ShowYoutube from "../sections/ShowYoutube.vue";
+import TourDates from "../sections/TourDates.vue";
+import MyPicture from "../sections/MyPicture.vue";
 import ShowInstagram from "../sections/ShowInstagram.vue";
 
 export default {
   components: {
     OrderNow,
     singleRelease,
-    ShowYoutube,
+    TourDates,
+    MyPicture,
     ShowInstagram,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-section {
-  min-height: 100vh;
-}
-</style>

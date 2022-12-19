@@ -4,8 +4,8 @@
       <base-logo class="order-now-logo">
         <icon-kamilm></icon-kamilm>
       </base-logo>
-      <h2>Kamil Malinowski - Evil Touch</h2>
-      <button>ORDER NOW</button>
+      <h1>Kamil Malinowski <span>∞</span> Evil Touch</h1>
+      <base-button>order now</base-button>
     </base-wrapper>
   </section>
 </template>
@@ -13,38 +13,15 @@
 <style lang="scss" scoped>
 section {
   padding: 3rem;
-  background-image: linear-gradient(
-      45deg,
-      rgba(177, 84, 198, 0.4),
-      rgb(29, 12, 50)
-    ),
-    url("./order-now-bg.jpg");
+  background-image: var(--gradient), url("./order-now-bg.jpg");
   background-size: cover;
   background-position: center;
 }
 
-button {
-  max-width: max-content;
-  font-family: inherit;
-  border: none;
-  font-size: 2.4rem;
-  letter-spacing: 1rem;
-  padding: 1rem 5rem 1rem;
-  text-align: center;
-  margin: 0 auto;
-  display: grid;
-  place-content: center;
-  border-radius: 50px;
-  background-color: var(--c-dark);
-  color: var(--c-light);
-  box-shadow: var(--shadow);
-  transition:var(--transition);
-  &:hover {
-    color: var(--c-secondary);
-    box-shadow: var(--shadow-hover)
-  }
+span {
+  display: block;
   @media screen and (min-width: 768px) {
-    font-size: 3rem;
+    display: inline-block;
   }
 }
 </style>

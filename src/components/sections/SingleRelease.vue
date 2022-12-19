@@ -4,17 +4,13 @@
       <h2>MLU - Alone</h2>
       <h3>new single + video out now</h3>
       <article>
-        <base-video>
-          <iframe
-            id="single"
-            title="single"
-            src="https://www.youtube.com/embed/SzYiiN7GNJc"
-          >
-          </iframe>
-        </base-video>
+        <base-iframe></base-iframe>
         <p>
-          "This composition would not have been created if not for friends who
-          helped me. Ah those bass awful were tamed by MG."
+          "The single Alone is the first track announcing a much larger project
+          that has been sitting in my head for a couple of years waiting to come
+          to light. I thank my wife, family and all my friends for their
+          patience and for their support, without which these ideas would never
+          have come into being."
           <b> Kamil Malinowski </b>
         </p>
       </article>
@@ -23,21 +19,6 @@
 </template>
 
 <style lang="scss" scoped>
-section {
-  padding: 6rem 3rem;
-  text-align: center;
-}
-
-h2 {
-  text-transform: uppercase;
-  padding-bottom: 1rem;
-}
-
-h3 {
-  text-transform: uppercase;
-  color: var(--c-light);
-}
-
 article {
   margin-top: 3rem;
   display: flex;
@@ -47,30 +28,24 @@ article {
     flex-direction: row;
     margin-top: 6rem;
     align-items: center;
-  }
-}
-
-iframe {
-  border: none;
-  border-radius: 4px;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-  width:40rem;
-            height:26rem;
-  &:hover {
-    box-shadow: var(--shadow-hover);
-  }
-  @media screen and (min-width: 1024px) {
-    width:50rem;
-            height:36rem;
+    * {
+      flex-basis: 100%;
+    }
   }
 }
 
 p {
   color: var(--c-light);
-  letter-spacing: 1rem;
-  line-height: 2rem;
+  letter-spacing: 0.8rem;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
   font-style: italic;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1.6rem;
+  }
 }
 
 b {
