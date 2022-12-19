@@ -75,7 +75,8 @@ h3 {
 h1,
 h2,
 h3,
-button {
+button,
+a {
   text-align: center;
   text-transform: uppercase;
 }
@@ -105,4 +106,3 @@ video {
   object-fit: cover;
 }
 </style>
-

@@ -39,7 +39,7 @@ p {
 .icon-tour {
   display: block;
   width: 100%;
-  max-width: 30rem;
+  max-width: 20rem;
   margin: 6rem auto;
 }
 </style>

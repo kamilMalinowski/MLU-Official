@@ -9,6 +9,7 @@ import {
   BiSpotify,
   FaBandcamp,
   CoHamburgerMenu,
+  IoClose
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -17,7 +18,8 @@ addIcons(
   BiFacebook,
   BiSpotify,
   FaBandcamp,
-  CoHamburgerMenu
+  CoHamburgerMenu,
+  IoClose
 );
 
 

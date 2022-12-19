@@ -1,12 +1,11 @@
 <template>
-  <header>
+  <header :class="fade">
     <video autoplay loop muted>
       <source
         src="https://www.kamil--m.com/music/header-bg.mp4"
         type="video/mp4"
       />
     </video>
-
     <base-wrapper class="header-wrapper">
       <base-logo class="header-logo">
         <a href="https://www.kamil--m.com/music/" rel="noopener noreferrer">
@@ -14,16 +13,49 @@
         </a>
       </base-logo>
       <base-list></base-list>
-      <button>
+      <button @click="openMenu">
         <v-icon name="co-hamburger-menu" scale="1.8" />
         <span>MENU</span>
       </button>
     </base-wrapper>
   </header>
+  <teleport to="body">
+    <the-menu @status-menu="closeMenu" :class="checkStatus"></the-menu>
+  </teleport>
 </template>
+
+<script>
+import TheMenu from "../layout/TheMenu.vue";
+
+export default {
+  components: {
+    TheMenu,
+  },
+  data() {
+    return {
+      checkStatus: "inactive",
+      fade: "fade-off",
+    };
+  },
+  methods: {
+    openMenu() {
+      this.checkStatus = "active";
+    },
+    closeMenu() {
+      this.checkStatus = "inactive";
+      this.fade = "fade-on";
+      setTimeout(() => {
+        this.fade = "fade-off";
+        window.scrollBy(0, -95);
+      }, 2000);
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 header {
+  transition: var(--transition);
   z-index: 999;
   width: 100%;
   position: fixed;
@@ -72,7 +104,14 @@ button {
 a:hover {
   svg {
     fill: var(--c-light);
-    transform: skew(-180deg , -180deg);
+    transform: skew(-180deg, -180deg);
   }
+}
+
+.fade-on {
+  transform: translateY(-100%);
+}
+.fade-off {
+  transform: translateY(0);
 }
 </style>

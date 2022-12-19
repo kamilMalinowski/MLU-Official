@@ -1,10 +1,10 @@
 <template>
   <main>
-    <order-now></order-now>
-    <single-release></single-release>
-    <tour-dates></tour-dates>
+    <order-now id="order-now"></order-now>
+    <single-release id="single-release"></single-release>
+    <tour-dates id="tour-dates"></tour-dates>
     <my-picture></my-picture>
-    <show-instagram></show-instagram>
+    <show-instagram id="gallery"></show-instagram>
   </main>
 </template>
 
@@ -25,4 +25,3 @@ export default {
   },
 };
 </script>
-
