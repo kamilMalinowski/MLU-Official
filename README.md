@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/64846552/210593722-2109cd9e-b4d5-400b-9bb7-bc3d15e47f04.png" style="width:100%">
+![image](https://user-images.githubusercontent.com/64846552/226471538-2f046760-a5db-4a7c-aca7-07756471c812.png)
 
 # vue-kamil--m-music
 
