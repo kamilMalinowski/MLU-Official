@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/64846552/226471538-2f046760-a5db-4a7c-aca7-07756471c812.png)
+
 # vue-kamil--m-music
 
 This template should help get you started developing with Vue 3 in Vite.
