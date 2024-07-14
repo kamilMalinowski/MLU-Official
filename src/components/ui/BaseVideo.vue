@@ -1,9 +1,6 @@
 <template>
   <video autoplay loop muted>
-    <source
-      src="https://www.kamil--m.com/music/button-bg.mp4"
-      type="video/mp4"
-    />
+    <source src="/music/button-bg.mp4" type="video/mp4" />
   </video>
 </template>
 

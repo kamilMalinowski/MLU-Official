@@ -1,14 +1,11 @@
 <template>
   <header :class="fade">
     <video autoplay loop muted>
-      <source
-        src="https://www.kamil--m.com/music/header-bg.mp4"
-        type="video/mp4"
-      />
+      <source src="/music/header-bg.mp4" type="video/mp4" />
     </video>
     <base-wrapper class="header-wrapper">
       <base-logo class="header-logo">
-        <a href="https://www.kamil--m.com/music/" rel="noopener noreferrer">
+        <a href="/music/" rel="noopener noreferrer">
           <icon-kamilm></icon-kamilm>
         </a>
       </base-logo>

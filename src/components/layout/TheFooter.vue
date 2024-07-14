@@ -6,9 +6,7 @@
       </base-logo>
       <p>
         WEBSITE DESIGN BY
-        <a href="https://www.kamil--m.com/" rel="noopener noreferrer"
-          >KAMIL MALINOWSKI</a
-        >
+        <a href="/" rel="noopener noreferrer">KAMIL MALINOWSKI</a>
       </p>
     </base-wrapper>
   </footer>
