@@ -13,7 +13,7 @@
 <style lang="scss" scoped>
 section {
   padding: 3rem;
-  background-image: var(--gradient), url("../order-now-bg.jpg");
+  background-image: var(--gradient), url("/music/order-now-bg.jpg");
   background-size: cover;
   background-position: center;
 }
