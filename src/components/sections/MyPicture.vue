@@ -1,7 +1,7 @@
 <template>
   <div>
     <base-video></base-video>
-    <img src="/kamil.jpg" alt="Kamil Malinowski" />
+    <img src="../kamil.jpg" alt="Kamil Malinowski" />
   </div>
 </template>
 
