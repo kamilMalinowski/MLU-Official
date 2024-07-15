@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background-image: var(--gradient), url("./youtube-bg.jpg");
+  background-image: var(--gradient), url("../youtube-bg.jpg");
   background-size: cover;
   background-position: center;
 }

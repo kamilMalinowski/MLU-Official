@@ -15,7 +15,7 @@
 <style lang="scss" scoped>
 footer {
   border-top: 1px dashed var(--c-secondary);
-  background-image: var(--gradient), url("./footer-bg.jpg");
+  background-image: var(--gradient), url("../footer-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 3rem;
